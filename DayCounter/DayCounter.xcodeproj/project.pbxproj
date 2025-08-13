@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2524ACD2E4C1092008FAC29 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2524ACC2E4C1092008FAC29 /* WidgetKit.framework */; };
+		A2524ACF2E4C1092008FAC29 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2524ACE2E4C1092008FAC29 /* SwiftUI.framework */; };
+		A2524ADE2E4C1094008FAC29 /* DayCounterWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A2524ACA2E4C1091008FAC29 /* DayCounterWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2524A9D2E4C0EBB008FAC29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2524A872E4C0EB9008FAC29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2524A8E2E4C0EB9008FAC29;
+			remoteInfo = DayCounter;
+		};
+		A2524AA72E4C0EBB008FAC29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2524A872E4C0EB9008FAC29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2524A8E2E4C0EB9008FAC29;
+			remoteInfo = DayCounter;
+		};
+		A2524ADC2E4C1094008FAC29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2524A872E4C0EB9008FAC29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2524AC92E4C1091008FAC29;
+			remoteInfo = DayCounterWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A2524AE32E4C1094008FAC29 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A2524ADE2E4C1094008FAC29 /* DayCounterWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A2524A8F2E4C0EB9008FAC29 /* DayCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2524A9C2E4C0EBB008FAC29 /* DayCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2524AA62E4C0EBB008FAC29 /* DayCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2524ACA2E4C1091008FAC29 /* DayCounterWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DayCounterWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2524ACC2E4C1092008FAC29 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A2524ACE2E4C1092008FAC29 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A2524ADF2E4C1094008FAC29 /* Exceptions for "DayCounterWidget" folder in "DayCounterWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A2524AC92E4C1091008FAC29 /* DayCounterWidgetExtension */;
+		};
+		A2524AE62E4C151E008FAC29 /* Exceptions for "DayCounter" folder in "DayCounterWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/DayCounterModel.swift,
+				Utils/DateMath.swift,
+			);
+			target = A2524AC92E4C1091008FAC29 /* DayCounterWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A2524A912E4C0EB9008FAC29 /* DayCounter */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A2524AE62E4C151E008FAC29 /* Exceptions for "DayCounter" folder in "DayCounterWidgetExtension" target */,
+			);
+			path = DayCounter;
+			sourceTree = "<group>";
+		};
+		A2524A9F2E4C0EBB008FAC29 /* DayCounterTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DayCounterTests;
+			sourceTree = "<group>";
+		};
+		A2524AA92E4C0EBB008FAC29 /* DayCounterUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DayCounterUITests;
+			sourceTree = "<group>";
+		};
+		A2524AD02E4C1092008FAC29 /* DayCounterWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A2524ADF2E4C1094008FAC29 /* Exceptions for "DayCounterWidget" folder in "DayCounterWidgetExtension" target */,
+			);
+			path = DayCounterWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2524A8C2E4C0EB9008FAC29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2524A992E4C0EBB008FAC29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2524AA32E4C0EBB008FAC29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2524AC72E4C1091008FAC29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2524ACF2E4C1092008FAC29 /* SwiftUI.framework in Frameworks */,
+				A2524ACD2E4C1092008FAC29 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2524A862E4C0EB9008FAC29 = {
+			isa = PBXGroup;
+			children = (
+				A2524A912E4C0EB9008FAC29 /* DayCounter */,
+				A2524A9F2E4C0EBB008FAC29 /* DayCounterTests */,
+				A2524AA92E4C0EBB008FAC29 /* DayCounterUITests */,
+				A2524AD02E4C1092008FAC29 /* DayCounterWidget */,
+				A2524ACB2E4C1092008FAC29 /* Frameworks */,
+				A2524A902E4C0EB9008FAC29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2524A902E4C0EB9008FAC29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2524A8F2E4C0EB9008FAC29 /* DayCounter.app */,
+				A2524A9C2E4C0EBB008FAC29 /* DayCounterTests.xctest */,
+				A2524AA62E4C0EBB008FAC29 /* DayCounterUITests.xctest */,
+				A2524ACA2E4C1091008FAC29 /* DayCounterWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2524ACB2E4C1092008FAC29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2524ACC2E4C1092008FAC29 /* WidgetKit.framework */,
+				A2524ACE2E4C1092008FAC29 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2524A8E2E4C0EB9008FAC29 /* DayCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2524AB02E4C0EBB008FAC29 /* Build configuration list for PBXNativeTarget "DayCounter" */;
+			buildPhases = (
+				A2524A8B2E4C0EB9008FAC29 /* Sources */,
+				A2524A8C2E4C0EB9008FAC29 /* Frameworks */,
+				A2524A8D2E4C0EB9008FAC29 /* Resources */,
+				A2524AE32E4C1094008FAC29 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2524ADD2E4C1094008FAC29 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A2524A912E4C0EB9008FAC29 /* DayCounter */,
+			);
+			name = DayCounter;
+			packageProductDependencies = (
+			);
+			productName = DayCounter;
+			productReference = A2524A8F2E4C0EB9008FAC29 /* DayCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2524A9B2E4C0EBB008FAC29 /* DayCounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2524AB32E4C0EBB008FAC29 /* Build configuration list for PBXNativeTarget "DayCounterTests" */;
+			buildPhases = (
+				A2524A982E4C0EBB008FAC29 /* Sources */,
+				A2524A992E4C0EBB008FAC29 /* Frameworks */,
+				A2524A9A2E4C0EBB008FAC29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2524A9E2E4C0EBB008FAC29 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A2524A9F2E4C0EBB008FAC29 /* DayCounterTests */,
+			);
+			name = DayCounterTests;
+			packageProductDependencies = (
+			);
+			productName = DayCounterTests;
+			productReference = A2524A9C2E4C0EBB008FAC29 /* DayCounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A2524AA52E4C0EBB008FAC29 /* DayCounterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2524AB62E4C0EBB008FAC29 /* Build configuration list for PBXNativeTarget "DayCounterUITests" */;
+			buildPhases = (
+				A2524AA22E4C0EBB008FAC29 /* Sources */,
+				A2524AA32E4C0EBB008FAC29 /* Frameworks */,
+				A2524AA42E4C0EBB008FAC29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2524AA82E4C0EBB008FAC29 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A2524AA92E4C0EBB008FAC29 /* DayCounterUITests */,
+			);
+			name = DayCounterUITests;
+			packageProductDependencies = (
+			);
+			productName = DayCounterUITests;
+			productReference = A2524AA62E4C0EBB008FAC29 /* DayCounterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A2524AC92E4C1091008FAC29 /* DayCounterWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2524AE02E4C1094008FAC29 /* Build configuration list for PBXNativeTarget "DayCounterWidgetExtension" */;
+			buildPhases = (
+				A2524AC62E4C1091008FAC29 /* Sources */,
+				A2524AC72E4C1091008FAC29 /* Frameworks */,
+				A2524AC82E4C1091008FAC29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A2524AD02E4C1092008FAC29 /* DayCounterWidget */,
+			);
+			name = DayCounterWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = DayCounterWidgetExtension;
+			productReference = A2524ACA2E4C1091008FAC29 /* DayCounterWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2524A872E4C0EB9008FAC29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					A2524A8E2E4C0EB9008FAC29 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					A2524A9B2E4C0EBB008FAC29 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = A2524A8E2E4C0EB9008FAC29;
+					};
+					A2524AA52E4C0EBB008FAC29 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = A2524A8E2E4C0EB9008FAC29;
+					};
+					A2524AC92E4C1091008FAC29 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = A2524A8A2E4C0EB9008FAC29 /* Build configuration list for PBXProject "DayCounter" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2524A862E4C0EB9008FAC29;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A2524A902E4C0EB9008FAC29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2524A8E2E4C0EB9008FAC29 /* DayCounter */,
+				A2524A9B2E4C0EBB008FAC29 /* DayCounterTests */,
+				A2524AA52E4C0EBB008FAC29 /* DayCounterUITests */,
+				A2524AC92E4C1091008FAC29 /* DayCounterWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2524A8D2E4C0EB9008FAC29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2524A9A2E4C0EBB008FAC29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2524AA42E4C0EBB008FAC29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2524AC82E4C1091008FAC29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2524A8B2E4C0EB9008FAC29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2524A982E4C0EBB008FAC29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2524AA22E4C0EBB008FAC29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2524AC62E4C1091008FAC29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2524A9E2E4C0EBB008FAC29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2524A8E2E4C0EB9008FAC29 /* DayCounter */;
+			targetProxy = A2524A9D2E4C0EBB008FAC29 /* PBXContainerItemProxy */;
+		};
+		A2524AA82E4C0EBB008FAC29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2524A8E2E4C0EB9008FAC29 /* DayCounter */;
+			targetProxy = A2524AA72E4C0EBB008FAC29 /* PBXContainerItemProxy */;
+		};
+		A2524ADD2E4C1094008FAC29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2524AC92E4C1091008FAC29 /* DayCounterWidgetExtension */;
+			targetProxy = A2524ADC2E4C1094008FAC29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A2524AAE2E4C0EBB008FAC29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2524AAF2E4C0EBB008FAC29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2524AB12E4C0EBB008FAC29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DayCounter/DayCounter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LP55JL2B64;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karaba.DayCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2524AB22E4C0EBB008FAC29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DayCounter/DayCounter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LP55JL2B64;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karaba.DayCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A2524AB42E4C0EBB008FAC29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karaba.DayCounterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DayCounter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DayCounter";
+			};
+			name = Debug;
+		};
+		A2524AB52E4C0EBB008FAC29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karaba.DayCounterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DayCounter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DayCounter";
+			};
+			name = Release;
+		};
+		A2524AB72E4C0EBB008FAC29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karaba.DayCounterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DayCounter;
+			};
+			name = Debug;
+		};
+		A2524AB82E4C0EBB008FAC29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karaba.DayCounterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DayCounter;
+			};
+			name = Release;
+		};
+		A2524AE12E4C1094008FAC29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DayCounterWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DayCounterWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karaba.DayCounter.DayCounterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2524AE22E4C1094008FAC29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DayCounterWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DayCounterWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karaba.DayCounter.DayCounterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2524A8A2E4C0EB9008FAC29 /* Build configuration list for PBXProject "DayCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2524AAE2E4C0EBB008FAC29 /* Debug */,
+				A2524AAF2E4C0EBB008FAC29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2524AB02E4C0EBB008FAC29 /* Build configuration list for PBXNativeTarget "DayCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2524AB12E4C0EBB008FAC29 /* Debug */,
+				A2524AB22E4C0EBB008FAC29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2524AB32E4C0EBB008FAC29 /* Build configuration list for PBXNativeTarget "DayCounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2524AB42E4C0EBB008FAC29 /* Debug */,
+				A2524AB52E4C0EBB008FAC29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2524AB62E4C0EBB008FAC29 /* Build configuration list for PBXNativeTarget "DayCounterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2524AB72E4C0EBB008FAC29 /* Debug */,
+				A2524AB82E4C0EBB008FAC29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2524AE02E4C1094008FAC29 /* Build configuration list for PBXNativeTarget "DayCounterWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2524AE12E4C1094008FAC29 /* Debug */,
+				A2524AE22E4C1094008FAC29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2524A872E4C0EB9008FAC29 /* Project object */;
+}
